@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <div class="formelement">
+    <h1 class="head">Form:</h1>
+    <form action="" id="myform">
+    <label for="">Name: <span>*</span></label><br>
+    <input class="textin"  oninput="firstName(event)" type="text"><br>
+
+    <label for="">Last Name: <span>*</span></label><br>
+    <input type="text" class="textin" oninput="lastName(event)" required><br>
+
+    <label for="">Address: <span>*</span></label><br>
+    <textarea class="address" id="output" cols="30" rows="10" oninput="address(event)"></textarea><br>
+
+    <label for="">Pincode: <span>*</span></label><br>
+    <input type="text" class="textin" oninput="pincode(event)"><br>
+
+    <label for="">Gender: <span>*</span></label><br>
+    <!--<select id="gender" multiple="multiple" required>          
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+        <option value="others">Others</option>
+      </select><br>-->
+
+    <input type="radio" value="Male">Male
+    <input type="radio" value="Female">Female
+    <input type="radio" value="Other">Other <br>
+
+    
+    <label for="">Food: <span>*</span></label><br>
+    <input type="checkbox"   class="checkboxes q"  value=" Pizza,"><label for=""  class="checklabel">Pizza</label><br>
+    <input type="checkbox" class="checkboxes"  value=" Burger,"><label for=""  class="checklabel">Burger</label><br>
+    <input type="checkbox" class="checkboxes"  value=" Fries,"><label for=""  class="checklabel">Fries</label><br>
+    <input type="checkbox" class="checkboxes"  value=" Vada-pav,"><label for=""  class="checklabel">Vada-pav</label><br>
+    <input type="checkbox" class="checkboxes z" value=" Pani-puri,"><label for=""  class="checklabel">Pani-puri</label><br>
+
+    <label for="">State: <span>*</span></label><br>
+    <input class="textin" type="text" oninput="state(event)" ><br>
+
+    <label for="">Country: <span>*</span></label><br>
+    <input class="textin" type="text" oninput="country(event)"><br>
+    
+</form>
+
+<button onclick="submit()">submit</button>
+
+</div>
+<div class="tables">
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Last Name</th>
+            <th>Adress</th>
+            <th>Pincode</th>
+            <th>Gender</th>
+            <th>State</th>
+            <th>Country</th>
+            <th>Food</th>
+           
+        </tr>
+    </table>
+</div>
+
+    <script src="js/index.js"></script>
+</body>
+</html>
